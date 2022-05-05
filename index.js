@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+
 const ejs= require('ejs')
 const router = require('./routes/home')
 
@@ -16,7 +17,6 @@ app.use(express.urlencoded({extended:false}));
 const dotenv=require('dotenv');
 
 dotenv.config();
-
 
 
 //set the template engine as ejs
